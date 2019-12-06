@@ -1,6 +1,6 @@
 # Keybow and Keybow MINI
 
-[OFFICIAL KEYBOW REPOSITORY](https://github.com/pimoroni/keybow-firmware)
+### [OFFICIAL KEYBOW REPOSITORY](https://github.com/pimoroni/keybow-firmware)
 
 >[Buy Keybow and Keybow MINI here](https://shop.pimoroni.com/?q=keybow)
 
