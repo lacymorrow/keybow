@@ -29,57 +29,75 @@ function handle_key_05(pressed)
 end
 
 function handle_key_06(pressed)
+    -- Bottom right
     keybow.set_modifier(keybow.LEFT_META, keybow.KEY_DOWN)
-    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_DOWN)
+    keybow.set_modifier(keybow.LEFT_SHIFT, keybow.KEY_DOWN)
 
     keybow.set_key(keybow.RIGHT_ARROW, pressed)
 
     keybow.set_modifier(keybow.LEFT_META, keybow.KEY_UP)
-    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_UP)
+    keybow.set_modifier(keybow.LEFT_SHIFT, keybow.KEY_UP)
 end
 
 function handle_key_07(pressed)
+    -- Top right
     keybow.set_modifier(keybow.LEFT_META, keybow.KEY_DOWN)
-    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_DOWN)
+    keybow.set_modifier(keybow.LEFT_SHIFT, keybow.KEY_DOWN)
 
     keybow.set_key(keybow.UP_ARROW, pressed)
 
     keybow.set_modifier(keybow.LEFT_META, keybow.KEY_UP)
-    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_UP)
+    keybow.set_modifier(keybow.LEFT_SHIFT, keybow.KEY_UP)
 end
 
 function handle_key_08(pressed)
+	-- Cycle
     keybow.set_modifier(keybow.LEFT_META, keybow.KEY_DOWN)
     keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_DOWN)
+    keybow.set_modifier(keybow.LEFT_CTRL, keybow.KEY_DOWN)
 
-    keybow.set_key(keybow.LEFT_ARROW, pressed)
+    keybow.tap_key(".")
 
+    keybow.set_modifier(keybow.LEFT_CTRL, keybow.KEY_UP)
     keybow.set_modifier(keybow.LEFT_META, keybow.KEY_UP)
     keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_UP)
 end
 
 function handle_key_09(pressed)
+	-- Right half
+    keybow.set_modifier(keybow.LEFT_META, keybow.KEY_DOWN)
+    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_DOWN)
+    keybow.set_modifier(keybow.LEFT_CTRL, keybow.KEY_DOWN)
+
+    keybow.set_key(keybow.RIGHT_ARROW, pressed)
+
+    keybow.set_modifier(keybow.LEFT_CTRL, keybow.KEY_UP)
+    keybow.set_modifier(keybow.LEFT_META, keybow.KEY_UP)
+    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_UP)
+end
+
+function handle_key_10(pressed)
+	-- Fullscreen on next display
+    keybow.set_modifier(keybow.LEFT_META, keybow.KEY_DOWN)
+    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_DOWN)
+    keybow.set_modifier(keybow.LEFT_CTRL, keybow.KEY_DOWN)
+
+    keybow.tap_key("/")
+
+    keybow.set_modifier(keybow.LEFT_CTRL, keybow.KEY_UP)
+    keybow.set_modifier(keybow.LEFT_META, keybow.KEY_UP)
+    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_UP)
+end
+
+function handle_key_11(pressed)
+	-- Left half
     keybow.set_modifier(keybow.LEFT_META, keybow.KEY_DOWN)
     keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_DOWN)
     keybow.set_modifier(keybow.LEFT_CTRL, keybow.KEY_DOWN)
 
     keybow.set_key(keybow.LEFT_ARROW, pressed)
 
-    keybow.set_modifier(keybow.LEFT_META, keybow.KEY_UP)
-    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_UP)
     keybow.set_modifier(keybow.LEFT_CTRL, keybow.KEY_UP)
-end
-
-function handle_key_10(pressed)
-    keybow.set_modifier(keybow.LEFT_META, keybow.KEY_DOWN)
-    keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_DOWN)
-
-    keybow.tap_key("/")
-
     keybow.set_modifier(keybow.LEFT_META, keybow.KEY_UP)
     keybow.set_modifier(keybow.LEFT_ALT, keybow.KEY_UP)
-end
-
-function handle_key_11(pressed)
-    keybow.set_key("9", pressed)
 end

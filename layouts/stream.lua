@@ -29,6 +29,7 @@ end
 -- Key mappings --
 
 function handle_key_00(pressed)
+    keybow.set_key(keybow.F13, pressed)
     if pressed then
         keybow.set_pixel(0, 255, 255, 255)
     else
@@ -37,6 +38,7 @@ function handle_key_00(pressed)
 end
 
 function handle_key_01(pressed)
+    keybow.set_key(keybow.F14, pressed)
     if pressed then
         keybow.set_pixel(1, 255, 255, 255)
     else
@@ -45,7 +47,7 @@ function handle_key_01(pressed)
 end
 
 function handle_key_02(pressed)
-    keybow.set_key(keybow.ENTER, pressed)
+    keybow.set_key(keybow.F15, pressed)
     if pressed then
         keybow.set_pixel(2, 255, 255, 255)
     else
@@ -54,7 +56,7 @@ function handle_key_02(pressed)
 end
 
 function handle_key_03(pressed)
-    keybow.set_key("1", pressed)
+    keybow.set_key(keybow.F16, pressed)
     if pressed then
         keybow.set_pixel(3, 255, 255, 255)
     else
@@ -63,7 +65,8 @@ function handle_key_03(pressed)
 end
 
 function handle_key_04(pressed)
-    keybow.set_key("2", pressed)
+    keybow.set_key(keybow.F17, pressed)
+
     if pressed then
         keybow.set_pixel(4, 255, 255, 255)
     else
@@ -72,7 +75,7 @@ function handle_key_04(pressed)
 end
 
 function handle_key_05(pressed)
-    keybow.set_key("3", pressed)
+    keybow.set_key(keybow.F18, pressed)
     if pressed then
         keybow.set_pixel(5, 255, 255, 255)
     else
@@ -81,7 +84,7 @@ function handle_key_05(pressed)
 end
 
 function handle_key_06(pressed)
-    keybow.set_key("4", pressed)
+    keybow.set_key(keybow.F19, pressed)
     if pressed then
         keybow.set_pixel(6, 255, 255, 255)
     else
@@ -90,7 +93,7 @@ function handle_key_06(pressed)
 end
 
 function handle_key_07(pressed)
-    keybow.set_key("5", pressed)
+    keybow.set_key(keybow.F20, pressed)
     if pressed then
         keybow.set_pixel(7, 255, 255, 255)
     else
@@ -99,7 +102,7 @@ function handle_key_07(pressed)
 end
 
 function handle_key_08(pressed)
-    keybow.set_key("6", pressed)
+    keybow.set_key(keybow.F21, pressed)
     if pressed then
         keybow.set_pixel(8, 255, 255, 255)
     else
@@ -108,7 +111,7 @@ function handle_key_08(pressed)
 end
 
 function handle_key_09(pressed)
-    keybow.set_key("7", pressed)
+    keybow.set_key(keybow.F22, pressed)
     if pressed then
         keybow.set_pixel(9, 255, 255, 255)
     else
@@ -117,7 +120,7 @@ function handle_key_09(pressed)
 end
 
 function handle_key_10(pressed)
-    keybow.set_key("8", pressed)
+    keybow.set_key(keybow.F23, pressed)
     if pressed then
         keybow.set_pixel(10, 255, 255, 255)
     else
@@ -127,9 +130,9 @@ end
 
 function handle_key_11(pressed)
 	---[[ Designate a fn key
-	fn_key(pressed)
+	-- fn_key(pressed)
 	--]]
-    keybow.set_key("9", pressed)
+    keybow.set_key(keybow.F24, pressed)
     if pressed then
         keybow.set_pixel(11, 255, 255, 255)
     else
